@@ -1,3 +1,6 @@
+% !TEX TS-program = XeLaTex+MakeIndex+BibTex
+% !TEX encoding = UTF-8 Unicode
+
 \documentclass[UTF8]{beamer}
 \usepackage{ctex, hyperref}
 \usepackage[T1]{fontenc}
@@ -5,6 +8,7 @@
 % other packages
 \usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
 \usepackage{graphicx,pstricks,listings,stackengine}
+\usepackage[numbers]{natbib}
 %\usepackage{auto-pst-pdf}
 %\usepackage[utf8]{inputenc}
 
@@ -58,7 +62,7 @@
     \begin{itemize}[<+-| alert@+>] % 当然，除了alert，手动在里面插 \pause 也行
         \item 这可能是第一个HDU风格的beamer
         \item 中文支持请选择 Xe\LaTeX{} 编译选项
-        \item 原THU模板Overleaf项目地址位于 \url{https://www.overleaf.com/latex/templates/thu-beamer-theme/vwnqmzndvwyb}，可以直接使用
+        \item 原THU模板Overleaf项目地址位于 \url{https://www.overleaf.com/latex/templates/thu-beamer-theme/vwnqmzndvwyb}，可以直接使用\cite{origin}
         \item 此GitHub项目地址位于 \url{https://github.com/zhaoleyi/HDU-beamer}，如果有bug或者feature request可以及时填写或者给我发邮件\href{mailto:leozhao2333@gmail.com}{leozhao2333@gmail.com}
     \end{itemize}
 \end{frame}
@@ -322,7 +326,7 @@ $V = \frac{4}{3}\pi r^3$
     \begin{figure}[htpb]
         \centering
         \includegraphics[width=0.2\linewidth]{img/hdu-logo.jpg}
-        \caption{这个校徽就是矢量图}
+        \caption{这个校徽就是标量图}
     \end{figure}
 \end{frame}
 
@@ -330,8 +334,8 @@ $V = \frac{4}{3}\pi r^3$
 \section{参考文献应用举例}
 
 \begin{frame}[allowframebreaks]
-    \bibliography{ref}
     \bibliographystyle{alpha}
+    \bibliography{ref}
     % 如果参考文献太多的话，可以像下面这样调整字体：
     % \tiny\bibliographystyle{alpha}
 \end{frame}
